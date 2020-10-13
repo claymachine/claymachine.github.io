@@ -1,1 +1,257 @@
-project clay machine
+<!--                                                                               
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNmdhyssyhdmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNmdy+:-......-:+ymMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmddddho:..............:smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNhhhhhhho-...``````........./dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNhyhhhhs:.```..`````````......-hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNhyyhhy/.``````...```````````...-hMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNhyyyyo-````..````````````````....:mMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdhhso:..`````````````````........`.sMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmhys/.....`````.--....`.``...``````.+MMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMds+/-.```......--::-----.......```..yNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy+--.....-::::::::::////:----::-....ohhmMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo::-.-::////////////+oo+//://+++/:..:hNMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/-://syoo+//--:/://+oyyo/::--:+++o:.:+mNMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmm+./:sydddhhyso+++oosyyhhyoo+//+++oyo.:+mMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo/../:ydmmmmdddhhhhhhhhdddhyhhyyyyhhhy-ysMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo:..:/shdddddddddhhhhddmdddhhhdddddddy-odNMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh+--/o+ydddddddhhhyyyooyyysshhhddhhdhs:sNNMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmhyyoyhhddhhhhyyyydhso++++//shyhhhhhh+oyMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmmdhshhhhhhhyssyhhhhyssyhhhhyyyyyyyssNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo+/--yhhhyhhso++sssssoossosoosysyyhdMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo:--..+yyyyyssoshhhhyssssssso+sssymNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms-..ossssooosyhhhyssosyyyysooosmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/.oyssssssyyhhysooooosyyyooyNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNdhhhyooossyyys+++oosyyysshNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNddhyso+oo++++++++ooooosNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNddhhysoo+//::::////+osyMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmddhhhhyyso//::://+oosyhMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNmdmmdddhhhhhhyyso+oosyyyyhdMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNyssso+hmddddhhhhhhyyyysyyyyyhhhhNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMMMMMMMNNNNNmmmddhyoo+//++/+ddddhhhhhyyssoossssyyhhhho/sdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMMMMNmdhsooo+++//:/::::/+/////:+hhhhhyyyyysso+oossyyyyyhhy:-+osyhdmNMMMMMMMMMMMMMMMMMMMMMMMMM
+   MMMMMMMMNho+///:::::::::::::::://////:/+syyyyyysssooossyyyyyyyhdhs:/-::::/+oshdmNNMMMMMMMMMMMMMMMMMM
+   MMMMMMNho////:::--------------::+///:::-:+sssyyssoo++oosyyyyyhhddy//:-:--:::::::/+oydNNMMMMMMMMMMMMM
+   MMMMMdo+/::::::----------.--..--/:-------/shyyyysooooossyyyhhhdddy+:--:--.---------::/oymNMMMMMMMMMM
+   MMMMy+/------.--------.....-...--:-::---.-ydddhhyyssssyhhdddmddddh/.-----.-.----------::/+sdMMMMMMMM
+   MMMy/:.........................--`........+dmmmddhhhhhddmmmmmmmmh/...--...-..........----::/sNMMMMMM
+   MMh//.`.......`................--```.......odmmddddddddmmmmmmdho-...--....-..............---:sMMMMMM
+   Mm/::.````....``...`............-.``........+yhdddddddddddhhs/.``...-..........`............--dMMMMM
+   M+:/:`````.`.```..```.............```.........-/+syyyyso+/-.```...............```````..``...../MMMMM
+   h::/-```````.````..``.............````.......````````````````..............`...````````````..`.hMMMM
+   o::/-.````````````````............`````.......````````````............``......`````````````````/NMMM
+   /-::-.````````````````.........`..``````....--:-.``...................``.......````````````````.hMMM
+   :-::-.```````` ````````............`````..-------.```.................``........````````````````:MMM
+   
+   -->
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Clay Machine Project">
+      <meta name="twitter:description" content="&#9002; clay machine.">
+      <meta name="twitter:site" content="@clay_machine">
+      <!-- Twitter Summary card images must be at least 120x120px -->
+      <meta name="twitter:image" content="malevolent/assets/img/tlo/3.jpg">
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Clay Machine Project" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://claymachine.github.io/" />
+      <meta property="og:image" content="malevolent/assets/img/tlo/3.jpg" />
+      <meta property="og:description" content="&#9002; clay machine." />
+      <link rel="icon" href="assets/img/icon.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <title>Clay Machine Project</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/svg-with-js.min.css" integrity="sha512-CfIjRw0J4f63YNZarIPUt9psHYYSppYFt3Ru9f0xKvhqf4piVbE8YjrM14c2uL+K2e+RAinJM6dNtLa5CnuAng==" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Vertical navbar -->
+      <div class="vertical-nav " id="sidebar">
+         <ul class="nav flex-column mb-0">
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://www.youtube.com/channel/UCczaCELSgivYMxrmnU9DVeA" >
+               <i class="fab fa-youtube mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">YouTube Channel</span>
+               </a>
+            </li>
+            <!-- <li class="nav-item">
+               <a href="#" class="tooltip2">
+               <i class="fab fa-spotify mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Spotify - Clay Machine</span>
+               </a>
+               </li> -->
+            <li class="nav-item">
+               <a href="#" class="tooltip2">
+               <i class="fab fa-spotify mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Spotify - MALEVOLENT</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://soundcloud.com/claymachine" >
+               <i class="fab fa-soundcloud mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Soundcloud</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="#" >
+               <i class="fab fa-itunes mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Apple iTunes</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://genius.com/artists/Clay-machine">
+               <i class="icon-genius mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Genius</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://www.instagram.com/claymachine/" >
+               <i class="fab fa-instagram mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Instagram</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://twitter.com/clay_machine">
+               <i class="fab fa-twitter mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">Twitter</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://tiktok.com/@claymachine">
+               <i class="fab fa-tiktok mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">TikTok</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="tooltip2" target="_blank" href="https://byte.co/claymachine">
+               <i class="fas fa-square-full mr-3 text-primary fa-lg"></i>
+               <span class="tooltiptext">byte</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <!-- End vertical navbar -->
+      <!-- Page content holder -->
+      <div class="page-header ">
+         <div class="container ">
+            <div class="row ">
+               <div class="col">
+                  <div class="brand"><a class="navbar-brand" href="/"></a></div>
+               </div>
+               <div class="col right-icon">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="page-content " id="content">
+         <div class="container content">
+
+            
+            <!-- song start  -->
+            <div class="row song">
+               <div class="col album-art ">
+                  <div id="card" class="card">
+                     <div class="card-face card-backing">
+                        <img src="assets/img/tlohi_artwork_front.jpg" alt="Clay Machine Project">
+                     </div>
+                     <div class="card-face card-front">
+                        <img src="assets/img/tlohi_artwork_back.jpg" alt="Clay Machine Project">
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="song-title">the last of _____ invention</div>
+                  <div class="artist-album">
+                     <span class="artist">/MA&#183;LEV&#183;O&#183;LENT/</span>
+                     <span class="dot"></span>
+                     <span class="album">Single (2020)</span>
+                  </div>
+                  <div class="commentary hide">
+                     <span>About this Song :</span>
+                     <p>&#9002; humans, who are limited by slow biological evolution, couldn't compete, and would be superseded.</p>
+                     <p>
+                        Music Produced &amp; Mastered by /MA&#183;LEV&#183;O&#183;LENT/<br/>
+                        Written by /MA&#183;LEV&#183;O&#183;LENT/, Stephen W. Hawking<br/>
+                        Mixed by /MA&#183;LEV&#183;O&#183;LENT/ at Dreamcaster Records
+                     </p>
+                  </div>
+                  <a href="http://localhost/claymachine.github.io/malevolent/tlo_____i/">
+                     <div class="button-container-2">
+                        <span class="mas">Listen</span>
+                        <button type="button" name="Hover">Listen</button>
+                     </div>
+                  </a>
+               </div>
+            </div>
+             <!-- song end  -->
+
+         </div>
+      </div>
+      <div class="page-footer " id="content">
+         <div class="container ">
+            <div class="row ">
+               <div class="col-md-10">
+                  <p>
+                     P &amp; C 2020 Clay Machine Project - Semarang, Indonesia. <br/>
+                     Some rights reserved, contact us for creative uses. Thank you for listening.
+                  </p>
+               </div>
+               <div class="col-md-2 text-right pull-right">
+                  <p></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End demo content -->
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+         -->
+      <script>
+         var card = document.getElementById("card");
+         
+         card.addEventListener('click', function(e){
+         
+         
+          
+         e.stopPropagation();
+         if(card.classList.contains('card--flipped')) {
+             card.classList.add('card--unflip');
+             setTimeout(function(){
+             card.classList.remove('card--flipped', 'card--unflip');
+             }, 500);
+             $(this).parents('.song').find('.commentary').addClass('hide')
+         }
+         else { 
+             card.classList.add("card--flipped");
+             $(this).parents('.song').find('.commentary').removeClass('hide')
+         }
+         });
+         
+         
+         
+      </script>
+   </body>
+</html>
