@@ -57,7 +57,7 @@
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>/MA&#183;LEV&#183;O&#183;LENT/ - the last of _____ invention</title>
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary_large_image">
@@ -82,9 +82,10 @@
          background-color: black !important;
          }
          #ytplayer{
-         background-color: red;
+        
          z-index: 0;
-         display: none;
+         /* display: none; */
+         margin-top: 20px;
          }
          .visualizer{
          margin:auto;
@@ -193,7 +194,7 @@
          transition: 0.3s;
          }
          .barcode{
-         width: 400px;
+         max-width: 400px;
          margin-bottom: 20px;
          margin-top:5px;
          }
@@ -207,6 +208,108 @@
          footer{
          margin-top: 20px;
          }
+
+
+        /*button effect */
+        .button-container-2 {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+            border: 1px solid #000;
+            transition: 0.5s;
+            margin: auto;
+            margin-bottom: 10px;
+            
+        }
+
+        .button-container-2 button {
+            width: 101%;
+            height: 100%;
+            background:#fff;
+            -webkit-mask: url("../../assets/img/urban-sprite.png");
+            mask: url("../../assets/img/urban-sprite.png");
+            -webkit-mask-size: 3000% 100%;
+            mask-size: 3000% 100%;
+            border: 1px solid #fff;
+            color: #000;
+            cursor: pointer;
+            -webkit-animation: ani2 0.7s steps(29) forwards;
+            animation: ani2 0.7s steps(29) forwards;
+        }
+
+        .button-container-2 button:hover {
+            -webkit-animation: ani 0.7s steps(29) forwards;
+            animation: ani 0.7s steps(29) forwards;
+        }
+
+        .mas {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	width: 101%;
+	margin-top: 12px;
+	position: absolute;
+	overflow: hidden;border: 1px solid #fff;    
+}
+
+@-webkit-keyframes ani {
+	from {
+		-webkit-mask-position: 0 0;
+		mask-position: 0 0;
+	}
+	to {
+		-webkit-mask-position: 100% 0;
+		mask-position: 100% 0;
+	}
+}
+
+@keyframes ani {
+	from {
+		-webkit-mask-position: 0 0;
+		mask-position: 0 0;
+	}
+	to {
+		-webkit-mask-position: 100% 0;
+		mask-position: 100% 0;
+	}
+}
+
+@-webkit-keyframes ani2 {
+	from {
+		-webkit-mask-position: 100% 0;
+		mask-position: 100% 0;
+	}
+	to {
+		-webkit-mask-position: 0 0;
+		mask-position: 0 0;
+	}
+}
+
+@keyframes ani2 {
+	from {
+		-webkit-mask-position: 100% 0;
+		mask-position: 100% 0;
+	}
+	to {
+		-webkit-mask-position: 0 0;
+		mask-position: 0 0;
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.visualizer{
+        display: none;
+    }
+    #ytplayer{
+        width: auto;
+        height: auto;
+    }
+    .barcode{
+        width: 200px;
+    }
+}
       </style>
    </head>
    <body>
@@ -276,6 +379,14 @@
       </main>
       <footer class="text-muted text-center">
          <div class="container">
+
+                  <a href="https://ffm.to/malevolent-tlohi" target="_blank">
+                     <div class="button-container-2">
+                        <span class="mas">StreamNow</span>
+                        <button type="button" name="Hover">StreamNow</button>
+                     </div>
+                  </a>
+
             <p>
                Music Produced &amp; Mastered by /MA&#183;LEV&#183;O&#183;LENT/<br/>
                Written by /MA&#183;LEV&#183;O&#183;LENT/, Stephen W. Hawking<br/>

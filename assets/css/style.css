@@ -477,12 +477,19 @@ body {
 	.song-title {
 		margin-top: 20px;
 	}
-	.album-art {
-		height: 280px;
+	.album-art,
+	.card{
+		height: 200px;
+		width: 200px;
 	}
 	.song-title,
 	.artist-album,
 	.button-container-2 {
 		margin-left: -13px;
+		max-width: 200px;
+	}
+	.commentary{
+		margin-left: -13px;
+		max-width: 200px;
 	}
 }
