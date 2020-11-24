@@ -256,7 +256,7 @@
         "albumName": "Single",
         "info": "",
         "link": "https://ffm.to/malevolent-tlohi",
-        "artwork": "../assets/img/tlohi_artwork_front.jpg",
+        "artwork": "../assets/img/tlohi_artwork_front_200px.jpg",
         "releaseDate": "2020-10-15T10:15:30+07:00",
         "banner": "../assets/gif/tlohi.gif"
     },
@@ -286,9 +286,9 @@
         "albumName": "Single",
         "info": "",
         "link": "https://ffm.to/malevolent-biomimicry",
-        "artwork": "../assets/img/biomimicry_artwork_front.jpg",
+        "artwork": "../assets/img/biomimicry_artwork_front_200px.jpg",
         "releaseDate": "2020-11-27T10:15:30+07:00",
-        "banner": "../assets/img/biomimicry_artwork_front.jpg"
+        "banner": "../assets/img/biomimicry_artwork_front_200px.jpg"
     }
     
 ]
