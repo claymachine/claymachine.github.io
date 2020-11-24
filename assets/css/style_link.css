@@ -1,0 +1,185 @@
+body {
+	background-color: #eee;
+	color: #111;
+	background-image: url('../img/texture.png');
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.container{
+    max-width: 400px;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* profile  */
+.profile{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile .avatar img{
+    width: 100%;
+}
+.profile .avatar{
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto 10px auto;
+}
+.profile h1{
+    font-size: 20px;
+}
+.profile .bio{
+    font-size: 14px;
+}
+
+/* titole */
+h2.title{
+    font-size: 20px;
+}
+
+/* pinned */
+.pinned{
+    margin-bottom: 30px;
+}
+.pinned a{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
+}
+.pinned a .content-link{
+    padding: 20px 20px 5px 20px;
+    z-index: 3;
+    position: relative;
+}
+.pinned a h3{
+    font-size: 20px;
+    line-height: 23px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,1);
+    color: #fff;
+}
+.pinned a p{
+    font-size: 14px;
+    line-height: 14px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,1);
+    color: #eee;
+}
+.pinned .shade{
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1));
+
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top:0;
+    z-index: 2;
+}
+.pinned a .content-banner{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:-50%;
+    z-index: 1;
+}
+
+/* latest music */
+.latest-music{
+    background-color: #fff;
+     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.05), 
+              0 2px 2px rgba(0,0,0,0.05), 
+              0 4px 4px rgba(0,0,0,0.05), 
+              0 8px 8px rgba(0,0,0,0.05);
+}
+.latest-music a.items{
+   display: grid;
+   grid-template-columns: 30% 70%;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.04);
+}
+.latest-music a.items::after{
+   content: '';
+   display: block;
+   width: 70px;
+   height: 100%;
+   right: 0;
+   position: absolute;
+   background-image: linear-gradient(to right, transparent,rgba(255,255,255,0.9), #fff);
+}
+
+.latest-music a.items .album-art{
+    width: 80px;
+    height: 80px;
+    margin:10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+}
+.latest-music a.items .album-art img{
+    width: 100%;
+}
+.latest-music a.items .album-art .info{
+   margin-bottom:10px;    
+   position: absolute;
+   bottom:0;
+   width: 80px;
+   background-color: rgba(0,0,0,0.5);
+   color: #eee;
+   font-weight: 100;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 10px;
+   border-radius: 0 0 5px 5px;
+}
+.latest-music a.items .content-link{
+    padding: 25px 10px 0px 0px;
+    margin-left: -7px;
+    text-align: left;
+}
+.latest-music a.items .content-link h3{
+    font-size: 20px;
+    white-space: nowrap; 
+    color: #000;
+    font-weight: 100;
+}
+.latest-music a.items .content-link p{
+    font-size: 12px;
+    line-height: 0px;
+    font-weight: bold;  
+    white-space: nowrap; 
+    color: #777;
+}
+.latest-music .see-more{
+    padding: 15px 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.latest-music a.items.unreleased .release-eta{
+    text-align: center;
+   padding-top: 35px;   
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+
+   left:0;
+   font-size: 16px;
+   color: #000;
+   z-index: 4;
+   background-color: rgba(255,255,255,0.9);
+   /* background-color: red; */
+}
+
+.loading{
+    padding: 10px
+}
