@@ -7,7 +7,8 @@
         "link": "https://www.youtube.com/watch?v=v0f6S6ZN6VY",
         "artwork": "https://i1.sndcdn.com/artworks-000393236328-1l20wc-t200x200.jpg",
         "releaseDate": "2016-03-19T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Seaworld",
@@ -17,7 +18,8 @@
         "link": "https://www.youtube.com/watch?v=EjqKeM8zPQM",
         "artwork": "https://i1.sndcdn.com/artworks-000168218343-5qvnww-t200x200.jpg",
         "releaseDate": "2016-06-21T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Haunt",
@@ -27,7 +29,8 @@
         "link": "https://soundcloud.com/claymachine/haunt",
         "artwork": "https://i1.sndcdn.com/artworks-000220455695-ndfnz0-t200x200.jpg",
         "releaseDate": "2017-05-01T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Terangkanlah",
@@ -37,7 +40,8 @@
         "link": "https://soundcloud.com/claymachine/terangkanlah-clay-machine-edit",
         "artwork": "https://i1.sndcdn.com/artworks-000236770250-qq2yrz-t200x200.jpg",
         "releaseDate": "2017-05-02T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Sejuta Harapan (PPAK FT 2017 Theme Song)",
@@ -47,7 +51,8 @@
         "link": "https://www.youtube.com/watch?v=YaSrkUFP5eY",
         "artwork": "https://i1.sndcdn.com/artworks-000236769649-1csq9f-t200x200.jpg",
         "releaseDate": "2017-08-01T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "There For You",
@@ -67,7 +72,8 @@
         "link": "https://www.youtube.com/watch?v=gbJ6ZZK3eaM",
         "artwork": "https://i1.sndcdn.com/artworks-000337170507-80nw25-t200x200.jpg",
         "releaseDate": "2018-08-21T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Together, Feel it! (PPAK UNNES 2018)",
@@ -77,7 +83,8 @@
         "link": "https://www.youtube.com/watch?v=w6r_TKB1IBQ",
         "artwork": "https://i1.sndcdn.com/artworks-000377034930-ph151y-t200x200.jpg",
         "releaseDate": "2018-08-21T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Unstable Love",
@@ -96,9 +103,10 @@
         "albumName": "Unofficial",
         "info": "Remix",
         "link": "https://www.youtube.com/watch?v=Gza1KP_3wG8",
-        "artwork": "../assets/img/menyimpan_rasa_cover.jpg",
+        "artwork": "https://claymachine.github.io/assets/img/menyimpan_rasa_cover.jpg",
         "releaseDate": "2018-09-04T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Ini Aku (ft. Clarita)",
@@ -108,7 +116,8 @@
         "link": "https://soundcloud.com/claymachine/devano-danendra-ini-aku-cover-by-clay-machine-ost-dear-nathan-hello-salma",
         "artwork": "https://i1.sndcdn.com/artworks-000432213897-5vi7ld-t200x200.jpg",
         "releaseDate": "2018-11-01T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "April (ft. Clarita)",
@@ -118,7 +127,8 @@
         "link": "https://soundcloud.com/claymachine/fiersa-besari-april-cover-by-clay-machine-ft-clarita",
         "artwork": "https://i1.sndcdn.com/artworks-000420597708-ywci0x-t200x200.jpg",
         "releaseDate": "2018-10-07T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Makan Daging Dengan Sayur Kol",
@@ -128,7 +138,8 @@
         "link": "https://www.youtube.com/watch?v=AUHllWRXofA",
         "artwork": "https://i1.sndcdn.com/artworks-000457253337-ow33i4-t200x200.jpg",
         "releaseDate": "2018-10-07T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "fried noodles",
@@ -138,7 +149,8 @@
         "link": "https://www.youtube.com/watch?v=n_vGkZcim7M",
         "artwork": "https://i1.sndcdn.com/artworks-000468904893-kqni7s-t200x200.jpg",
         "releaseDate": "2019-01-09T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Film Favorit",
@@ -148,7 +160,8 @@
         "link": "https://soundcloud.com/claymachine/film-favorit",
         "artwork": "https://i1.sndcdn.com/artworks-000491828508-5o3rv6-t200x200.jpg",
         "releaseDate": "2019-02-04T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Lagu Galau (Versi Ngapak)",
@@ -158,7 +171,8 @@
         "link": "https://www.youtube.com/watch?v=p2agBN9mXVc",
         "artwork": "https://i1.sndcdn.com/artworks-000505062552-yo3wc8-t200x200.jpg",
         "releaseDate": "2019-03-19T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "pengganggu tidur",
@@ -168,7 +182,8 @@
         "link": "https://soundcloud.com/claymachine/annoying-phone-alarm-mashup-that-made-u-awake-at-3",
         "artwork": "https://i1.sndcdn.com/artworks-000517939389-xlzt79-t200x200.jpg",
         "releaseDate": "2019-04-08T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "i y a&nbsp;&nbsp;s e y e n g&nbsp;&nbsp;(lo-fi)",
@@ -176,9 +191,10 @@
         "albumName": "Unofficial",
         "info": "Remix",
         "link": "https://youtu.be/ZIm4mM1k1ps",
-        "artwork": "../assets/img/seyeng_cover.jpg",
+        "artwork": "https://claymachine.github.io/assets/img/seyeng_cover.jpg",
         "releaseDate": "2019-04-19T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "moonlight (koplo)",
@@ -188,7 +204,8 @@
         "link": "https://soundcloud.com/claymachine/xxxtentacion-moonlight-koplo-flip-by-clay-machine",
         "artwork": "https://i1.sndcdn.com/artworks-000539699205-hwzxel-t200x200.jpg",
         "releaseDate": "2019-05-03T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "/suro",
@@ -198,7 +215,8 @@
         "link": "https://soundcloud.com/claymachine/suro",
         "artwork": "https://i1.sndcdn.com/artworks-000590304086-zp9t1d-t200x200.jpg",
         "releaseDate": "2019-05-13T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "I Need You",
@@ -206,7 +224,7 @@
         "albumName": "Single",
         "info": "Remix",
         "link": "https://www.youtube.com/watch?v=z-99FXk99UQ",
-        "artwork": "../assets/img/ineedyou_cover.jpg",
+        "artwork": "https://claymachine.github.io/assets/img/ineedyou_cover.jpg",
         "releaseDate": "2019-05-13T00:00:00+07:00",
         "banner": ""
     },
@@ -218,7 +236,8 @@
         "link": "https://soundcloud.com/claymachine/mars-teknik-elektro-unnes-cover",
         "artwork": "https://i1.sndcdn.com/artworks-4aB18JTsPoRoM76W-9FBnzw-t200x200.jpg",
         "releaseDate": "2019-05-23T00:00:00+07:00",
-        "banner": ""
+        "banner": "",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "mercusuar (ft. Memet)",
@@ -256,9 +275,12 @@
         "albumName": "Single",
         "info": "",
         "link": "https://ffm.to/malevolent-tlohi",
-        "artwork": "../assets/img/tlohi_artwork_front_200px.jpg",
+        "artwork": "https://claymachine.github.io/assets/img/tlohi_artwork_front_200px.jpg",
+        "artworkHd": "https://claymachine.github.io/assets/img/tlohi_artwork_front_1000px.jpg",
+        "backArtwork": "https://claymachine.github.io/assets/img/tlohi_artwork_back.jpg",
         "releaseDate": "2020-10-15T10:15:30+07:00",
-        "banner": "../assets/gif/tlohi.gif"
+        "banner": "https://claymachine.github.io/assets/gif/tlohi.gif",
+        "commentary": "&#9002; humans, who are limited by slow biological evolution, couldn't compete, and would be superseded.<br/><br/>Music Produced &amp; Mastered by /MA&#183;LEV&#183;O&#183;LENT/<br/>Written by /MA&#183;LEV&#183;O&#183;LENT/<br/>Mixed by /MA&#183;LEV&#183;O&#183;LENT/ at Dreamcaster Records"
     },
     {
         "songTitle": "Why Do You Care?",
@@ -268,7 +290,8 @@
         "link": "https://www.youtube.com/watch?v=Ut3AfPBngGo",
         "artwork": "https://i1.sndcdn.com/artworks-XXXRwKXBkALm-0-t200x200.jpg",
         "releaseDate": "2020-09-08T10:15:30+07:00",
-        "banner": "https://i1.sndcdn.com/artworks-XXXRwKXBkALm-0-t200x200.jpg"
+        "banner": "https://i1.sndcdn.com/artworks-XXXRwKXBkALm-0-t200x200.jpg",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "Runaway",
@@ -278,7 +301,8 @@
         "link": "https://smarturl.it/1drbw9",
         "artwork": "https://i1.sndcdn.com/artworks-3M7tj8Wa7xz4-0-t200x200.png",
         "releaseDate": "2020-09-08T10:15:30+07:00",
-        "banner": "https://i1.sndcdn.com/artworks-3M7tj8Wa7xz4-0-t200x200.png"
+        "banner": "https://i1.sndcdn.com/artworks-3M7tj8Wa7xz4-0-t200x200.png",
+        "hiddenFromHome": true
     },
     {
         "songTitle": "biomimicry",
@@ -286,9 +310,11 @@
         "albumName": "Single",
         "info": "",
         "link": "https://ffm.to/malevolent-biomimicry",
-        "artwork": "../assets/img/biomimicry_artwork_front_200px.jpg",
+        "artwork": "https://claymachine.github.io/assets/img/biomimicry_artwork_front_200px.jpg",
+        "artworkHd": "https://claymachine.github.io/assets/img/biomimicry_artwork_front_1000px.jpg",
         "releaseDate": "2020-11-27T24:00:00-05:00",
-        "banner": "../assets/img/biomimicry_artwork_front_200px.jpg"
+        "banner": "https://claymachine.github.io/assets/img/biomimicry_artwork_front_200px.jpg",
+        "commentary": "Music Produced &amp; Mastered by /MA&#183;LEV&#183;O&#183;LENT/<br/>Written by /MA&#183;LEV&#183;O&#183;LENT/<br/>Mixed by /MA&#183;LEV&#183;O&#183;LENT/ at Dreamcaster Records"
     }
     
 ]
