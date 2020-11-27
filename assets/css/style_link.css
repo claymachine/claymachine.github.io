@@ -98,6 +98,7 @@ h2.title{
               0 2px 2px rgba(0,0,0,0.05), 
               0 4px 4px rgba(0,0,0,0.05), 
               0 8px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
 }
 .latest-music a.items{
    display: grid;
@@ -182,4 +183,86 @@ h2.title{
 
 .loading{
     padding: 10px
+}
+
+/* more update */
+.more-update{
+    background-color: #fff;
+     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.05), 
+              0 2px 2px rgba(0,0,0,0.05), 
+              0 4px 4px rgba(0,0,0,0.05), 
+              0 8px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.more-update a.items{
+   display: grid;
+   grid-template-columns: 30% 70%;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.04);
+}
+.more-update a.items::after{
+   content: '';
+   display: block;
+   width: 70px;
+   height: 100%;
+   right: 0;
+   position: absolute;
+   background-image: linear-gradient(to right, transparent,rgba(255,255,255,0.9), #fff);
+}
+
+.more-update a.items .info{
+    width: 80px;
+    margin:10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.more-update a.items .info.blog{
+    background-color: #eee;
+    color: #000;
+}
+.more-update a.items .info.code{
+    background-color: #f75d5d;
+    color: #eee;
+}
+
+
+.more-update a.items .title{
+    padding: 10px 10px 0px 0px;
+    margin-left: -7px;
+    text-align: left;
+    color: #000;
+}
+
+.more-update .see-more{
+    padding: 15px 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* find me */
+.find-me{
+    background-color: #fff;
+     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.05), 
+              0 2px 2px rgba(0,0,0,0.05), 
+              0 4px 4px rgba(0,0,0,0.05), 
+              0 8px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.find-me li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.04);
+}
+.find-me a{
+    color: #000;
 }

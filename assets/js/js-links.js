@@ -1,12 +1,18 @@
 const musicData = "../assets/json/music.json";
+const blogData = "../assets/json/blog.json";
 var theSongList = null;
 var songDataLength = 0;
 var songOnLoad = 4;
 var songLoadStep = 3;
+var theBlogList = null;
+var blogDataLength = 0;
+var blogOnLoad = 4;
+var blogLoadStep = 3;
 
 $( document ).ready(function() {
     latestMusic(songOnLoad);
     pinnedMusic(); 
+    latestBlog(blogOnLoad);
 });
 
 
@@ -21,6 +27,17 @@ $(document).on("click", "#see-more", function (event) {
   
     latestMusic(songOnLoad);
     scrollToAnchor("see-more");
+});
+$(document).on("click", "#see-more2", function (event) {
+  if (blogOnLoad + blogLoadStep <= blogDataLength) {
+    blogOnLoad += blogLoadStep;
+  } else {
+    blogOnLoad = blogDataLength;
+    // $(this).hide();
+  }
+
+  latestBlog(blogOnLoad);
+  scrollToAnchor("see-more2");
 });
 
 function scrollToAnchor(aid) {
@@ -133,6 +150,42 @@ function latestMusic(songOnLoad) {
     $("#latest-music").html(songList);
   });
 }
+
+function latestBlog(blogOnLoad) {
+  let blogList = "";
+  $.getJSON(blogData, function (data) {
+    theBlogList = data.reverse();
+    var i;
+    for (i = 0; i < blogOnLoad; i++) {
+      var value = theBlogList[i];
+      blogDataLength = Object.keys(data).length;
+      var releaseDate = new Date(value.date);
+      var releaseYear = releaseDate.getFullYear();
+      var eta = getETA(new Date(), releaseDate);
+      var diff = releaseDate - new Date();
+      let day3 = 3 * 24 * 60 * 60 * 1000;
+
+      // if already released
+      if (diff < 0) {
+        blogList += '<a href="' + value.link + '" class="items">';
+        blogList += '       <div class="info ' + value.tags + '">' + value.tags + "</div>";
+        blogList += '       <div class="title">' + value.title + "</div>";
+        blogList += " </a>";
+      }else{
+        console.log(diff);
+      }
+    }
+
+    // write to #latest-music
+    if (blogOnLoad < blogDataLength) {
+      blogList +=
+        '<a id="see-more2" name="see-more2" class="see-more">see more</a>';
+    }
+
+    $("#more-update").html(blogList);
+  });
+}
+
 
 
 function getETA(date_future, date_now) {
