@@ -8,7 +8,28 @@ $( document ).ready(function() {
     latestMusic(songOnLoad);
 });
 
+// flip the album
+// js can read element made by jquery
+try{
+  var card = document.getElementById("card");
 
+  card.addEventListener("click", function (e) {
+    e.stopPropagation();
+    if (card.classList.contains("card--flipped")) {
+      card.classList.add("card--unflip");
+      setTimeout(function () {
+        card.classList.remove("card--flipped", "card--unflip");
+      }, 500);
+      $(this).parents(".song").find(".commentary").addClass("hide");
+    } else {
+      card.classList.add("card--flipped");
+      $(this).parents(".song").find(".commentary").removeClass("hide");
+    }
+  });
+}catch(e){
+    console.log(e);
+}
+         
 
 $(document).on("click", "#see-more", function (event) {
     if(songOnLoad+songLoadStep <= songDataLength ){
@@ -86,7 +107,9 @@ function latestMusic(songOnLoad) {
       }catch(err) {console.log(err)}
 
       // if already released
-      if(hiddenFromHome == false){
+      if(hiddenFromHome == true){
+        songDataLength = songDataLength-1;
+      }else{
         if (diff < 0) {
             songList += '    <div class="row song">';
             songList += '       <div class="col album-art ">';
