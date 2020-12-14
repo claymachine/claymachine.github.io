@@ -5,31 +5,28 @@ var songOnLoad = 4;
 var songLoadStep = 3;
 
 $( document ).ready(function() {
-    latestMusic(songOnLoad);
-});
+  latestMusic(songOnLoad);
 
-// flip the album
-// js can read element made by jquery
-try{
-  var card = document.getElementById("card");
-
-  card.addEventListener("click", function (e) {
-    e.stopPropagation();
-    if (card.classList.contains("card--flipped")) {
-      card.classList.add("card--unflip");
+  // flip
+  $(document).on("click", "#card", function (e) {
+     e.stopPropagation();
+    console.log("clicked: %o", this);
+    var card = $(this);
+    if(card.hasClass("card--flipped")){
+      card.addClass("card--unflip");
       setTimeout(function () {
-        card.classList.remove("card--flipped", "card--unflip");
+        card.removeClass("card--flipped");
+        card.removeClass("card--unflip");
       }, 500);
-      $(this).parents(".song").find(".commentary").addClass("hide");
-    } else {
-      card.classList.add("card--flipped");
-      $(this).parents(".song").find(".commentary").removeClass("hide");
+       card.parents(".song").find(".commentary").addClass("hide");
+    }else{
+      card.addClass("card--flipped");
+        card.parents(".song").find(".commentary").removeClass("hide");
     }
   });
-}catch(e){
-    console.log(e);
-}
-         
+
+});
+    
 
 $(document).on("click", "#see-more", function (event) {
     if(songOnLoad+songLoadStep <= songDataLength ){
