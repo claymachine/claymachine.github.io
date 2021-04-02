@@ -328,6 +328,16 @@
         "releaseDate": "2020-12-28T06:00:00-05:00",
         "banner": "https://claymachine.github.io/assets/img/seewhat_artwork_front_200px.jpg",
         "commentary": "Written &amp; Produced by Clay Machine<br/>Additional production by Danny Leone <br/>Mixed by Clay Machine at Dreamcaster Records"
+    },
+    {
+        "songTitle": "Endlessly",
+        "artistName": "Danny Leone",
+        "albumName": "Single",
+        "info": "",
+        "link": "https://open.spotify.com/track/6OXe4vAcH2HElNrDF0KKEA?si=4ee19ac114c04ea3",
+        "artwork": "https://i.scdn.co/image/ab67616d0000b273634a59a55835aec88bac95c6",
+        "releaseDate": "2021-04-02T10:15:30+07:00",
+        "banner": "https://i.scdn.co/image/ab67616d0000b273634a59a55835aec88bac95c6",
+        "hiddenFromHome": true
     }
-    
 ]
