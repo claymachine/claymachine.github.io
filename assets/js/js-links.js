@@ -2,16 +2,18 @@ const musicData = "../assets/json/music.json";
 const blogData = "../assets/json/blog.json";
 var theSongList = null;
 var songDataLength = 0;
-var songOnLoad = 4;
+var songOnLoad = 3;
 var songLoadStep = 3;
 var theBlogList = null;
 var blogDataLength = 0;
 var blogOnLoad = 4;
 var blogLoadStep = 3;
+var myArtistName = 'Clay Machine';
 
 $( document ).ready(function() {
-    latestMusic(songOnLoad);
     pinnedMusic(); 
+    pinnedBlog(); 
+    latestMusic(songOnLoad);
     latestBlog(blogOnLoad);
 });
 
@@ -49,6 +51,7 @@ function scrollToAnchor(aid) {
 
 function pinnedMusic() {
     let alreadyPinned = false;
+    let hideThisSong = false;
 
     $.getJSON(musicData,
       function (data) {
@@ -56,8 +59,15 @@ function pinnedMusic() {
           var releaseDate = new Date(value.releaseDate);
           var diff = releaseDate - new Date();
 
-          if (diff < 0 && alreadyPinned == false) {
-            console.log(value.songTitle);
+          // others artist maximum pinned for 3 days
+          if(value.artistName.search(myArtistName) == -1 && (diff/(1000*60*60*24)) < -3)
+          { 
+            hideThisSong = true;
+          } 
+
+          
+          if (diff < 0 && alreadyPinned == false && hideThisSong == false) {
+            
             alreadyPinned = true;
 
             let songList = '';
@@ -70,6 +80,50 @@ function pinnedMusic() {
             songList += '   <img class="content-banner" src="'+value.banner+'">';
             songList += '</a>';
             $("#pinned-music").html(songList);
+          }
+
+          // hide this song reset
+          hideThisSong = false;
+        })
+      });
+}
+function pinnedBlog() {
+    let alreadyPinned = false;
+
+    $.getJSON(blogData,
+      function (data) {
+        $.each(data.reverse(), function (key, value) {
+          var releaseDate = new Date(value.date);
+          var diff = releaseDate - new Date();
+
+          if (diff < 0 && alreadyPinned == false) {
+            alreadyPinned = true;
+
+            if(value.tags == "fa fa-pencil-alt")
+            {
+              let blogList = '';
+              blogList += ' <a href="' + value.link + '">';
+              blogList += '   <div class="content-link">';
+              blogList += '       <p><i class="fa fa-pencil-alt"></i> &nbsp;New Blog Post! </p>';
+              blogList += '       <h3>' + value.title + '</h3>';
+              blogList += '   </div>';
+              blogList += '   <div class="shade"></div>';
+              blogList += '   <img class="content-banner" src="">';
+              blogList += '</a>';
+              $("#pinned-blog").html(blogList);
+            }else{
+              let blogList = '';
+              blogList += ' <a href="' + value.link + '">';
+              blogList += '   <div class="content-link">';
+              blogList += '       <p><i class="fas fa-fire"></i> &nbsp;New Code! </p>';
+              blogList += '       <h3>' + value.title + '</h3>';
+              blogList += '   </div>';
+              blogList += '   <div class="shade"></div>';
+              blogList += '   <img class="content-banner" src="">';
+              blogList += '</a>';
+              $("#pinned-blog").html(blogList);
+            }
+
           }
         })
       });
@@ -168,7 +222,7 @@ function latestBlog(blogOnLoad) {
       // if already released
       if (diff < 0) {
         blogList += '<a href="' + value.link + '" class="items">';
-        blogList += '       <div class="info ' + value.tags + '">' + value.tags + "</div>";
+        blogList += '       <div class="info"><i class="' + value.tags + '"></i></div>';
         blogList += '       <div class="title">' + value.title + "</div>";
         blogList += " </a>";
       }else{

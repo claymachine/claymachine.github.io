@@ -36,6 +36,13 @@ body {
 h2.title{
     font-size: 20px;
 }
+h2.title i{
+    font-size: 15px;
+    color: #444;
+    margin-top: 4px;
+    margin-left: 5px;
+    position: absolute;
+}
 
 /* pinned */
 .pinned{
@@ -87,6 +94,27 @@ h2.title{
     top:-50%;
     z-index: 1;
 }
+/* #pinned-blog */
+.pinned #pinned-blog .content-link{
+    padding-bottom: 10px;
+}
+.pinned #pinned-blog a .shade{
+    background-color: #fff;
+    background-image: none;
+}
+.pinned #pinned-blog a h3{
+    color: #333;
+    text-shadow: none;
+}
+.pinned #pinned-blog a p{
+    color: #555;
+    text-shadow: none;
+    line-height: 0;
+    margin-bottom: 6px;
+}
+.pinned #pinned-blog a{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%);
+}
 
 /* latest music */
 .latest-music{
@@ -98,7 +126,7 @@ h2.title{
               0 2px 2px rgba(0,0,0,0.05), 
               0 4px 4px rgba(0,0,0,0.05), 
               0 8px 8px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .latest-music a.items{
    display: grid;
@@ -195,29 +223,21 @@ h2.title{
               0 2px 2px rgba(0,0,0,0.05), 
               0 4px 4px rgba(0,0,0,0.05), 
               0 8px 8px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .more-update a.items{
    display: grid;
-   grid-template-columns: 30% 70%;
+   grid-template-columns: 55px auto;
     text-decoration: none;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,.04);
 }
-.more-update a.items::after{
-   content: '';
-   display: block;
-   width: 70px;
-   height: 100%;
-   right: 0;
-   position: absolute;
-   background-image: linear-gradient(to right, transparent,rgba(255,255,255,0.9), #fff);
-}
+
 
 .more-update a.items .info{
-    width: 80px;
-    margin:10px;
-    border-radius: 5px;
+    width: 30px;
+    margin: 0 ;
+    border-radius: 2px;
     overflow: hidden;
     display: block;
     text-align: center;
@@ -233,14 +253,22 @@ h2.title{
 
 
 .more-update a.items .title{
-    padding: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 0px;
     margin-left: -7px;
     text-align: left;
     color: #000;
 }
 
+.more-update a.items i.fa{
+    color: #444;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .more-update .see-more{
-    padding: 15px 10px;
+    padding: 10px 0px 12px 0px;
     text-align: center;
     display: block;
     width: 100%;
@@ -265,4 +293,9 @@ h2.title{
 }
 .find-me a{
     color: #000;
+}
+.find-me ul li a i{
+    width: 20px;
+    margin-left: 20px;
+    color: #333 !important;
 }
