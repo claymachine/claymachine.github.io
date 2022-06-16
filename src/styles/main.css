@@ -43,25 +43,25 @@ body {
 	background-position: center center;
 }
 
-.slash-logo {
+.section-home .slash-logo {
 	position: absolute;
 	right: 20px;
 	bottom: 30px;
 }
 
-.slash-logo img {
+.section-home .slash-logo img {
 	height: 70px;
 	width: auto;
 }
 
-.text-logo {
+.section-home .text-logo {
 	position: absolute;
 	left: 40px;
 	bottom: 40px;
 }
 
-.text-logo img {
-	height: 55px;
+.section-home .text-logo img {
+	height: 60px;
 	width: auto;
 }
 
@@ -109,7 +109,7 @@ body {
 	height: 100vh;
 	scroll-snap-align: start;
 	position: absolute;
-	top: 100%;
+	top: 100vh;
 	width: 100%;
 	background-color: rgb(223, 223, 223);
 	box-sizing: border-box;
@@ -117,9 +117,70 @@ body {
 	background-image: url(../images/texture.png);
 }
 
+
 .section-music a {
 	color: #000;
 	text-decoration: none;
+}
+
+.section-music .text-logo {
+	position: absolute;
+	left: 40px;
+	top: 30px;
+}
+
+.section-music .text-logo img {
+	height: 60px;
+	width: auto;
+}
+
+.section-music .slash-logo {
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+
+.section-music .slash-logo img {
+	height: 70px;
+	width: auto;
+}
+
+
+@media(max-width:700px) {
+	.section-music .text-logo {
+		display: none;
+	}
+	.section-music .slash-logo {
+		display: none;
+	}
+}
+
+
+.footer {
+	scroll-snap-align: start;
+	width: 100%;
+	top: 200%;
+	position: absolute;
+	
+	box-sizing: border-box;
+
+	background-color: rgba(7, 7, 7);
+	color: #eee;
+	padding: 15px 22px;
+
+
+	text-align: center;
+	font-size: 9px;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+} 
+
+.footer a {
+	color: #654433;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 3px;
 }
 
 .listen {
@@ -186,30 +247,6 @@ body {
  }
  
 
-.footer {
-	scroll-snap-align: start;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background-color: rgba(7, 7, 7);
-	color: #eee;
-	padding: 15px 22px;
-	box-sizing: border-box;
-	text-align: center;
-	font-size: 9px;
-	width: 100%;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 0.7rem;
-}
-
-.footer a {
-	color: #654433;
-	text-decoration: none;
-	display: inline-block;
-	margin: 0 3px;
-}
-
 @media(orientation:portrait) {
 	.home {
 		background-image: url("../images/hero-mobile.jpg");
@@ -254,7 +291,7 @@ body {
 		font-size: 20px;
 	}
     .listen {
-        padding: 20% 18px;
+        padding: 20% 100px;
     }
 }
 

@@ -4,8 +4,11 @@ import { fab, faInstagram, faItunesNote, faSoundcloud, faSpotify, faTiktok, faTw
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import * as React from "react"
 import '../styles/main.css'
-import slashLogo from '../images/slash_logo.png';
-import textLogo from '../images/text_logo.png';
+import slashLogoW from '../images/slash_w.svg';
+import textLogoW from '../images/text_w.svg';
+import slashLogoB from '../images/slash_b.svg';
+import textLogoB from '../images/text_b.svg';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -105,13 +108,7 @@ const IndexPage = () => {
     window.innerWidth,
     window.innerHeight,
   ]);
-  React.useEffect(() => {
-    if (window.innerWidth > 900) {
-      setTrackPerPage(5)
-    } else {
-      setTrackPerPage(1)
-    }
-  }, [dimension])
+
 
   /**
    * Detect window's size changes 
@@ -197,10 +194,10 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="section-home">
             <div className="text-logo">
-              <img src={textLogo} alt="CLAY MACHINE" />
+              <img src={textLogoW} alt="CLAY MACHINE" />
             </div>
             <div className="slash-logo">
-              <img src={slashLogo} alt="//" />
+              <img src={slashLogoW} alt="//" />
             </div>
 
             <div className="social">
@@ -253,6 +250,12 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="section-music">
+            <div className="text-logo">
+              <img src={textLogoB} alt="CLAY MACHINE" />
+            </div>
+            <div className="slash-logo">
+              <img src={slashLogoB} alt="//" />
+            </div>
             <div className="listen">
               <Swiper
                 onSlideChange={(currentSwiper) => { onSwiperChange(currentSwiper) }}
@@ -264,11 +267,25 @@ const IndexPage = () => {
                   modifier: 1,
                   slideShadows: true
                 }}
-                slidesPerView={trackPerPage}
-                centeredSlides={true}
-
                 grabCursor={true}
                 modules={[EffectCoverflow]}
+
+                centeredSlides={true}
+                breakpoints={{
+                  500: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    slideShadows: false
+                  },
+                  700: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
+                  },
+                  900: {
+                    slidesPerView: 5,
+                    spaceBetween: 0
+                  }
+                }}
 
               >
                 {
@@ -353,13 +370,11 @@ const IndexPage = () => {
                 })
               }
             </div>
+          </div>
 
-
-            <footer className="footer">
+          <footer className="footer">
               P &amp; C 2020 Clay Machine | Some Rights reserved, contact us for creative uses. Thank you for listening.
             </footer>
-
-          </div>
         </div>
       </div>
 
