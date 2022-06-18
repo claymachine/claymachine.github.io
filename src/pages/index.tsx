@@ -1,6 +1,6 @@
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 
-import { fab, faInstagram, faItunesNote, faSoundcloud, faSpotify, faTiktok, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+import {  faInstagram, faItunesNote, faSoundcloud, faSpotify, faTiktok, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import * as React from "react"
 import '../styles/main.css'
@@ -13,30 +13,26 @@ import textLogoB from '../images/text_b.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Moment from "react-moment"
-import Countdown from "react-countdown"
 
 import ReactTimeAgo from "react-time-ago"
-import en from 'javascript-time-ago/locale/en.json'
-import TimeAgo from 'javascript-time-ago'
+
+
 import MetaTags from "../components/MetaTags"
 
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow } from "swiper";
 
-// Import Swiper styles
-// import "swiper/swiper";
-// import "swiper/components/navigation/navigation";
-// import "swiper/components/pagination/pagination";
-// import "swiper/components/effect-coverflow/effect-coverflow";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-TimeAgo.addDefaultLocale(en)
 
 
 // markup
 const IndexPage = () => {
+  if (typeof window === 'undefined') {
+    return;
+  }
 
   const [trackList, setTrackList] = React.useState([]);
   const [selectedTrack, setSelectedTrack] = React.useState(0);
@@ -58,7 +54,7 @@ const IndexPage = () => {
  * Load tipper on page load 
  */
   function loadTracklist() {
-    const endpoint = apiEndpoint + '/tracklist.json'
+    const endpoint = apiEndpoint + '/api_tracklist.php'
     fetch(endpoint, {
       method: 'GET',
       headers: new Headers({
@@ -190,7 +186,7 @@ const IndexPage = () => {
   return (
     <>
       <MetaTags />
-      <div className="container">
+      <div className="container home">
         <div className="wrapper">
           <div className="section-home">
             <div className="text-logo">
@@ -201,47 +197,47 @@ const IndexPage = () => {
             </div>
 
             <div className="social">
-              <a href="https://claymachine.github.io/youtube/" target="_blank">
+              <a href={process.env.SOCIAL_YOUTUBE} target="_blank">
                 <FontAwesomeIcon icon={faYoutube} />
                 <span>
                   <strong>Youtube</strong><br />
                   Stream
                 </span>
               </a>
-              <a href="https://music.apple.com/us/artist/clay-machine/1457129710" target="_blank">
+              <a href={process.env.SOCIAL_APPLE} target="_blank">
                 <FontAwesomeIcon icon={faItunesNote} />
                 <span>
                   <strong>Apple Music</strong><br />
                   Stream
                 </span>
               </a>
-              <a href="https://open.spotify.com/artist/48tjWkLVu14ivc5z58cdx4" target="_blank">
+              <a href={process.env.SOCIAL_SPOTIFY} target="_blank">
                 <FontAwesomeIcon icon={faSpotify} />
                 <span>
                   <strong>Spotify</strong><br />
                   Stream
                 </span>
               </a>
-              <a href="https://soundcloud.com/claymachine" target="_blank">
+              <a href={process.env.SOCIAL_SOUNDCLOUD} target="_blank">
                 <FontAwesomeIcon icon={faSoundcloud} />
                 <span>
                   <strong>Soundcloud</strong><br />
                   Stream
                 </span>
               </a>
-              <a href="https://www.instagram.com/claymachine/" target="_blank">
+              <a href={process.env.SOCIAL_INSTAGRAM} target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
                 <span><strong>Instagram</strong><br />
                   Follow
                 </span>
               </a>
-              <a href="https://twitter.com/claymachine" target="_blank">
+              <a href={process.env.SOCIAL_TWITTER} target="_blank">
                 <FontAwesomeIcon icon={faTwitter} />
                 <span><strong>Twitter</strong><br />
                   Follow
                 </span>
               </a>
-              <a href="https://www.tiktok.com/@claymachine" target="_blank">
+              <a href={process.env.SOCIAL_TIKTOK} target="_blank">
                 <FontAwesomeIcon icon={faTiktok} />
                 <span><strong>Tiktok</strong><br />
                   Follow
@@ -274,8 +270,7 @@ const IndexPage = () => {
                 breakpoints={{
                   500: {
                     slidesPerView: 1,
-                    spaceBetween: 30,
-                    slideShadows: false
+                    spaceBetween: 100
                   },
                   700: {
                     slidesPerView: 3,
@@ -296,7 +291,9 @@ const IndexPage = () => {
                         <div className="album-art"
                           ref={ref}
                           onClick={() => {
+                            if (item.back_artwork !== null) {
                               flipAlbumArt(index);
+                            }
                           }}
                           style={{ height: albumArtHeight }}
                         >
@@ -323,7 +320,6 @@ const IndexPage = () => {
 
               {
                 trackList.map((item: any, index: any) => {
-
                   return (
 
                     <div className={index == activeSlide ? 'song-basic-info' : 'song-basic-info hide'}>
@@ -342,13 +338,13 @@ const IndexPage = () => {
 
                         </span>
                         <span className="dot"></span>
-                        <span className="album">Single (<Moment unix format="YYYY">{item.release_date}</Moment>)</span>
+                        <span className="album">{item.type} (<Moment unix format="YYYY">{item.release_date}</Moment>)</span>
                       </div>
                       {
                         (item.release_date - (new Date().getTime() / 1000)) < 1 ? (
                           <>
 
-                            <a href="https://li.sten.to/claymachine-seewhat">
+                            <a href={item.link}>
                               <div className="button-container-2">
                                 <span className="mas">Listen</span>
                                 <button type="button" name="Hover">Listen</button>

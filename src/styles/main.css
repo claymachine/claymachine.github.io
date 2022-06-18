@@ -19,7 +19,7 @@ body {
 }
 
 
-.container {
+.container.home {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -279,6 +279,9 @@ body {
     .song-detail-info:hover {
         opacity: 0;
     }
+	.listen {
+        padding: 20% 0;
+    }
 }
 
 @media(max-width:700px) {
@@ -291,7 +294,7 @@ body {
 		font-size: 20px;
 	}
     .listen {
-        padding: 20% 100px;
+        padding: 10% 44px;
     }
 }
 
