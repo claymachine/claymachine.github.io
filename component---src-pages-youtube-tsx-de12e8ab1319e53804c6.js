@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclay_machine=self.webpackChunkclay_machine||[]).push([[552],{7912:function(e,n,t){t.r(n);var c=t(7294);n.default=function(){if("undefined"!=typeof window)return c.useEffect((function(){window.location.replace("https://claymachine.github.io/youtube/")})),c.createElement(c.Fragment,null,"Redirecting...")}}}]);
+//# sourceMappingURL=component---src-pages-youtube-tsx-de12e8ab1319e53804c6.js.map

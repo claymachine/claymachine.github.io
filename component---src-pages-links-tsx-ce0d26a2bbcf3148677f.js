@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclay_machine=self.webpackChunkclay_machine||[]).push([[268],{2860:function(e,n,c){c.r(n);var i=c(7294);n.default=function(){if("undefined"!=typeof window)return i.useEffect((function(){window.location.replace("/link")})),i.createElement(i.Fragment,null,"Redirecting...")}}}]);
+//# sourceMappingURL=component---src-pages-links-tsx-ce0d26a2bbcf3148677f.js.map

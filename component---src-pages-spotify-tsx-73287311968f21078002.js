@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclay_machine=self.webpackChunkclay_machine||[]).push([[682],{4273:function(e,n,t){t.r(n);var c=t(7294);n.default=function(){if("undefined"!=typeof window)return c.useEffect((function(){window.location.replace("https://open.spotify.com/artist/48tjWkLVu14ivc5z58cdx4")})),c.createElement(c.Fragment,null,"Redirecting...")}}}]);
+//# sourceMappingURL=component---src-pages-spotify-tsx-73287311968f21078002.js.map
